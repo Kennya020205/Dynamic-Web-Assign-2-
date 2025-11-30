@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 20px;
+    text-align: center;
+}
+
+h1 {
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+}
+
+p {
+    color: darkgray;
+    text-align: center;
+}
+
+table {
+    border: 1px solid black;
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid gray;
+    text-align: center;
+}
+
+th {
+    background-color: blue;
+    color: white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+hr {
+    margin: 20px 0;
+}
