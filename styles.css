@@ -1,57 +1,112 @@
+/* Body with background image */
 body {
     font-family: Arial, sans-serif;
-    background-color: white;
-    margin: 20px;
+    background: url('img/PetStoreBackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
     text-align: center;
+    color: #333;
 }
 
-h1 {
-    background-color: blue;
+/* Header */
+header {
+    background-color: rgba(0, 68, 204, 0.85); /* semi-transparent deep blue */
     color: white;
+    padding: 15px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: rgba(0, 85, 238, 0.9);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.navbar .nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s, border-radius 0.3s;
+}
+
+.navbar .nav-link:hover {
+    background-color: #003399;
+    border-radius: 5px;
+}
+
+/* Category Info, Products, Store Info, Promo Section */
+.category-info,
+.products,
+.store-info,
+.promo-section {
+    background-color: rgba(255, 255, 255, 0.95); /* mostly white with slight transparency */
     padding: 15px;
-    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
-h2 {
-    color: black;
-    text-align: center;
-}
-
-h3 {
-    color: black;
-    text-align: center;
-}
-
-p {
-    color: darkgray;
-    text-align: center;
-}
-
+/* Tables */
 table {
-    border: 1px solid black;
+    border-collapse: collapse;
     width: 100%;
     background-color: white;
-    margin: 0 auto;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
 th, td {
-    padding: 8px;
-    border: 1px solid gray;
+    padding: 12px 10px;
+    border: 1px solid #ddd;
     text-align: center;
 }
 
 th {
-    background-color: blue;
+    background-color: #0044cc;
     color: white;
 }
 
+/* Stock Level Colors */
+.stock-high {
+    background-color: #c6f5c6;
+    color: #006600;
+    font-weight: bold;
+}
+
+.stock-good {
+    background-color: #fff3b0;
+    color: #996600;
+    font-weight: bold;
+}
+
+.stock-low {
+    background-color: #f5c6c6;
+    color: #990000;
+    font-weight: bold;
+}
+
+/* Footer */
 footer {
-    background-color: black;
+    background-color: rgba(34, 34, 34, 0.95);
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 10px 0;
+    margin-top: 30px;
 }
 
-hr {
-    margin: 20px 0;
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
